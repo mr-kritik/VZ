@@ -77,7 +77,7 @@ def update_proxies(period, targets):
     random.shuffle(Proxies)
 
     size = len(targets)
-    logger.info(f'{len(Proxies):, прокси проверяется на работоспособность - это может занять пару минут:} ')
+    logger.info(f'{len(Proxies):,} прокси проверяется на работоспособность - это может занять пару минут: ')
 
     future_to_proxy = {}
     with ThreadPoolExecutor(THREADS_PER_CORE) as executor:
